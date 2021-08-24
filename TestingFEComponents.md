@@ -136,7 +136,7 @@ Let's go ahead and test our first component. We will largely follow a [Test Driv
     You should now see something like this: 
 
     ```
-     PASS  src/App.test.js
+    PASS  src/App.test.js
         ✓ renders learn react link (34 ms)
         ✓ renders learn react link (6 ms)
 
@@ -159,6 +159,6 @@ Conclusion
 
     Great! We've started a new project, we've run the first test that comes with the project. We then added an addtional test and saw it failing. Finally, we added an element to our App component that satisfied our second test and see that both of our tests are passing. 
 
-    Let's move one to building a custom component following
+    Let's move one to building a custom component following [TDD with Testing Library](http://www.test.com).
 
 
