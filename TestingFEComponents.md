@@ -16,6 +16,25 @@ Let's go ahead and test our first component. We will largely follow a [Test Driv
 
     Run `npm test` and voila, just like that you will run your first test and see it pass. 
 
+    You should see something like this: 
+
+    ```
+    PASS  src/App.test.js
+        ✓ renders learn react link (35 ms)
+
+    Test Suites: 1 passed, 1 total
+    Tests:       1 passed, 1 total
+    Snapshots:   0 total
+    Time:        3.666 s
+    Ran all test suites related to changed files.
+
+    Watch Usage: Press w to show more.
+    ```
+
+    We see that 1/1 tests has passed! Go ahead and press `ctrl + c` to stop the testing process.
+
+3. Let's Look at the First Test
+
     Go ahead and open `src/App.test.js`. You'll see code like this:
     
     ```
@@ -67,7 +86,7 @@ Let's go ahead and test our first component. We will largely follow a [Test Driv
     So if we were to translate this to plain english we might say: 
     "Go ahead and render the App component. Search that component for an element that includes the text 'learn react' and give it a name of `linkElement`. At last, check to make sure that the element is in the component that we rendered. 
 
-3. Let's Write a New Test
+4. Let's Write a New Test
 
     Inside the same test file, let's add a new test. Given that we are now following Test Driven Development (TDD), we expect this test to fail after we write it. 
 
@@ -101,5 +120,45 @@ Let's go ahead and test our first component. We will largely follow a [Test Driv
     › Press Enter to trigger a test run.
     ```
     
+    This time, we see that we have two total tests, where one is successful and one has failed. 
+
+    Simlar to last time, let's close our test runner by pressing `ctrl + c`. 
+
+4. Making the Test Pass
+
+    We've created a failing test, now how do we make it pass?
+
+    Open App.js. Somewhere in the return statement, create an element like this:
+    `<div> Hello Friend </div>`
+
+    Let's run the tests again: `npm test`.
+
+    You should now see something like this: 
+
+    ```
+     PASS  src/App.test.js
+        ✓ renders learn react link (34 ms)
+        ✓ renders learn react link (6 ms)
+
+    Test Suites: 1 passed, 1 total
+    Tests:       2 passed, 2 total
+    Snapshots:   0 total
+    Time:        4.213 s
+    Ran all test suites related to changed files.
+
+    Watch Usage
+    › Press a to run all tests.
+    › Press f to run only failed tests.
+    › Press q to quit watch mode.
+    › Press p to filter by a filename regex pattern.
+    › Press t to filter by a test name regex pattern.
+    › Press Enter to trigger a test run.
+    ```
+
+Conclusion
+
+    Great! We've started a new project, we've run the first test that comes with the project. We then added an addtional test and saw it failing. Finally, we added an element to our App component that satisfied our second test and see that both of our tests are passing. 
+
+    Let's move one to building a custom component following [TDD with Testing Library](/).
 
 
