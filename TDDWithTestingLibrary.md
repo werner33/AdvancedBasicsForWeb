@@ -124,5 +124,33 @@ We will start by building an InfoCard component that will included a title and s
     As soon as you save that code, you should see the tests re-run and pass. 
 
 7. Test for Specific Text
+    We want to pass a title prop into our Info Card component with some text. That text should then render inside of our H3 element. Let's write a test that describes that: 
+    
+    ```
+        test('it renders the title text passed as a prop', () => {
+            const {getByText} = render(<InfoCard title="Info Card Title">);
+            expect(getByText('Info Card Title')).toBeInTheDocument();
+        })
+    ```
+
+    Add a title prop to your conponent and render it inside the H3 element. 
+
+8. Repeat both Tests for the Content Area 
+
+    Follow the example of the previous two tests except this time, test for a data-testid of 'infoCard__content' and then test that the prop content takes some text and renders it in the component. 
+
+    I'll leave this implementation to you. 
+
+    Lastly, change your component such that all the tests pass. You should have five tests at this point. 
+
+    Our test file should look like this <add link>
+
+9. Conclusion
+
+    We've written a nice test suite for this rather static component. One thing to keep in mind is that we should never delete tests that we've previously written unless the requirements for the component change or if we discover we made some mistake in writing our tests. Tests build on one another as a sort of scafolding to ensure that the component does everything we expect it to do. 
+
 
     
+ 
+    
+
