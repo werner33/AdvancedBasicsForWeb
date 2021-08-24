@@ -13,9 +13,116 @@ We will start by building an InfoCard component that will included a title and s
     Inside this directory, create a second directory called `__test__`. This is the folder that will hold our test suite. Go ahead and create a file inside `/__test__` called InfoCard.test.js. 
 
     We Should have a file structure that looks like this:
+    <pre>
     .
     +-- src
     |   +-- infoCard
             +-- __test__
                 +-- InfoCard.test.js
+    </pre>
 
+2. Let's Write Our First Test
+
+    Open `InfoCard.test.js`. Let's follow the example of our previous code and write our first test just to test if the component is rendering properly. 
+
+    ```
+    import { render, screen } from '@testing-library/react';
+    import InfoCard from '.././InfoCard';
+
+    test('renders InfoCard', () => {
+        render(<InfoCard />);
+    });
+
+    ```
+
+    We know we haven't even set up our component yet, so we expect this test to fail. 
+
+    And here it is: 
+
+    ```
+
+        1 | import { render, screen } from '@testing-library/react';
+      > 2 | import InfoCard from '.././InfoCard';
+          | ^
+        3 |
+        4 | test('renders InfoCard', () => {
+        5 |     render(<InfoCard />);
+    ```
+
+    Notice the carrot pointing to where this test has stopped. It can't import InfoCard because we haven't created it yet. Lets do that. 
+
+3. Create `InfoCard`
+
+    Let's create InfoCard and run the test again. It fails again, but we see the pointers have moved down to line that says `render(<InfoCard />)`. 
+
+4. Let's Write the Barebones of the InfoCard
+
+    Inside InfoCard.js add:
+
+    ```
+        import React from 'react';
+
+        function InfoCard(props) {
+            return (
+                <div>
+                    
+                </div>
+            );
+        }
+
+        export default InfoCard;
+    ```
+
+    If you haven't stopped your test, you'll see that the test runs automatically and now, it passes! 
+
+    ```
+     PASS  src/components/infoCard/__test__/InfoCard.test.js
+        ✓ renders InfoCard (15 ms)
+
+    Test Suites: 1 passed, 1 total
+    Tests:       1 passed, 1 total
+    Snapshots:   0 total
+    Time:        1.527 s
+    Ran all test suites related to changed files.
+
+    Watch Usage: Press w to show more.
+    ```
+
+    As soon as we have a passing test, it's time to write a new test! 
+
+5. Write a Test for the Card Title
+
+    Until now, we have checked that a component renders properly or we've checked for specific test on the screen. With our info card, we want to be able to pass the title and body text as props when the component is first rendered. Let's make sure we check for both the element that will hold the text as well as the text itself. 
+
+    When we want to target a specific element, we have the option of using `data-testid` as a property on our html element.
+
+    Write a second test like this: 
+
+    ```
+    test('it has an element to hold the title text', () => {
+        const {getByTestId} = render(<InfoCard />);
+        expect(getByTestId('infoCard__title')).toBeInTheDocument();
+    })
+    ```
+
+    And of course, that will fail! Always exciting. Notice that the failing test is telling us exactly what we need to do next. 
+
+6. Add an Element with data-testid 
+
+    We return to our InfoCard component and we'll add a `h3` element with the data-testid property.
+
+    ```
+        ...
+        return (
+                    <div>
+                       <h3 data-testid="infoCard__title> 
+                    </div>
+                );
+           
+    ```
+
+    As soon as you save that code, you should see the tests re-run and pass. 
+
+7. Test for Specific Text
+
+    
