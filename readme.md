@@ -2,9 +2,15 @@
 
 ### Week 1: SCSS and BEM
 
+[Video recording](https://us06web.zoom.us/rec/share/UcJhx6wlsM2MvWaQXe_moXL5in4bTnbHeM_mKe7MEN87_myOhVbwqmJJOtr1k5Fv.Vkzd3BQPU1YjPkLO) Password: %4kBUbMc 
+
 ### Week 2: Building Responsive Components
 
+[Video recording](https://us06web.zoom.us/rec/share/XOdkPa1YWKnTllJ0GNMlYh4Mz9C90v0WMcjbkXuzl8x1YgSmsOFIBzUB7IE8ngLQ.s743OcrH7F9vsPdH) Password: JDnT8H4$
+
 ### Week 3: UX for Asynchronous Components
+
+[Video recording](https://us06web.zoom.us/rec/share/YKboI4HnNvvUJJ71qfw3AE8E_1oXbyd5XzvTcuAHGyIdubfxftUQRDNN6c7Rn-GU.MpXjApcQuwhGbPg1) Password: wjQ4E#JB
 
 ### Week 4: Testing with Jest
 
