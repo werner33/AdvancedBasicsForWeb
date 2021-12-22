@@ -15,6 +15,7 @@
 ### Week 4: Testing Components with Jest
 
 [Video recording](https://us06web.zoom.us/rec/share/iepAFZ5WfRExlGMEFeCmMhJPww_2ZvhFLnKRGRCxWtxq-y4hBzl_G9wtqBOD-YWP.p9IYo8pbPdunN5Dk) Password: nvrVu^R2
+
 [Source Code](https://github.com/werner33/frontendTestingWithJest)
 
 1. Testing Front-End Components in React
