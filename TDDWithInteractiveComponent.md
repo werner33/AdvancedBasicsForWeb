@@ -8,7 +8,7 @@ So far we've looked at the basic react app out of the box, then we moved on to t
 
     As with last time, we'll start by just writing a test to make sure our component renders properly, however, this time we will integrate one more Jest function, `describe`:
 
-    ```
+    ``` javascript
     import { render, screen } from '@testing-library/react';
     import Counter from '.././Counter';
     
@@ -39,7 +39,7 @@ So far we've looked at the basic react app out of the box, then we moved on to t
 
     Lets grab the button by its text, click it one time, then check that the counter is displaying 1.
 
-    ```
+    ``` javascript
         ...
          describe('the counter has a button to increment the count by one each time its clicked', () => {
 
@@ -62,7 +62,7 @@ So far we've looked at the basic react app out of the box, then we moved on to t
 
     Given that we want our clicker to be able to increment several times, lets add a test similar to the last, but click the button three times and check that the display is equal to 3. 
 
-    ```
+    ``` javascript
      test('counter increments by one when button is clicked' , () => {
         const {getByText, getByTestId} = render(<Counter />);
 
