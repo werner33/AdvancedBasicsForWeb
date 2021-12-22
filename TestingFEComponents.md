@@ -60,7 +60,7 @@ Let's go ahead and test our first component. We will largely follow a [Test Driv
 
     We then import the component that we plan to test. 
 
-    ```
+    ``` javascript
     test('renders learn react link', () => {
        ...
     });
@@ -72,7 +72,7 @@ Let's go ahead and test our first component. We will largely follow a [Test Driv
 
         2. A call back function that usually starts by setting up the component and checking some expectation of that component.
 
-    ```
+    ``` javascript
         test('renders learn react link', () => {
             render(<App />);
             const linkElement = screen.getByText(/learn react/i);
@@ -92,7 +92,7 @@ Let's go ahead and test our first component. We will largely follow a [Test Driv
 
     Add this to the end of `src/App.test.js`: 
 
-    ```
+    ``` javascript
         test('renders learn react link', () => {
             render(<App />);
             const linkElement = screen.getByText(/Hello Friend/i);
@@ -104,7 +104,7 @@ Let's go ahead and test our first component. We will largely follow a [Test Driv
 
     You should see something like this: 
 
-    ```
+    ``` javascript
     Test Suites: 1 failed, 1 total
     Tests:       1 failed, 1 passed, 2 total
     Snapshots:   0 total
@@ -135,7 +135,7 @@ Let's go ahead and test our first component. We will largely follow a [Test Driv
 
     You should now see something like this: 
 
-    ```
+    ``` javascript
     PASS  src/App.test.js
         ✓ renders learn react link (34 ms)
         ✓ renders learn react link (6 ms)
