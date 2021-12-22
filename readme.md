@@ -52,6 +52,8 @@
  
 ### Week 9: Git 2
 
+1. [Amending Commits](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/Git2.md)
+
 ### Week 10: SQL 1
 
 [Video Recording]()
