@@ -95,3 +95,22 @@ The beginning of the result will look like this:
 1. The boss has offered a prize to whichever employee packed more items in the month of August of 1996. Please write a query that shows all employees by their first and last names and how many total items (not unique items, but overall quantity) that they packed in August from most to least packed.  
 
 ![Screen Shot 2021-11-22 at 4 43 40 PM](https://user-images.githubusercontent.com/692461/142939566-383e5bf9-32a6-412a-b54e-9693907f3db1.png)
+
+
+### Articles on SQL, Query Management and ORMS
+
+[Why You Should Avoid ORMs](https://blog.logrocket.com/why-you-should-avoid-orms-with-examples-in-node-js-e0baab73fa5/). 
+
+[ORMS are Awesome](https://chanind.github.io/2020/01/13/awesome-orms.html)
+
+### Fun SQL Resources 
+
+[W3 SQL](https://www.w3schools.com/sql/default.asp) - This is a real treasure as a reference. 
+
+[LeetCode](https://leetcode.com/problemset/database/)
+
+[SQL Murder Mystery](https://mystery.knightlab.com/) -  a great free game with lots of practice in more complex SQL queries. 
+
+[SQL ZOO](https://sqlzoo.net/wiki/SQL_Tutorial) - lots of practice starting with very easy SQL to much more advanced. 
+
+[SQL Police Department](https://sqlpd.com/) - This game only has a few levels for free and can feel a bit elementary, but fun none-the-less.
