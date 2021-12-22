@@ -1,4 +1,12 @@
-# Testing with Jest
+### Advanced Basics for Web
+
+## SCSS and BEM
+
+## Building Responsive Components
+
+## UX for Asynchronous Components
+
+## Testing with Jest
 
 1. How Jest Works
 
