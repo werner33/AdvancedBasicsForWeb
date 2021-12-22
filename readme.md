@@ -1,12 +1,12 @@
-### Advanced Basics for Web
+# Advanced Basics for Web
 
-## SCSS and BEM
+### SCSS and BEM
 
-## Building Responsive Components
+### Building Responsive Components
 
-## UX for Asynchronous Components
+### UX for Asynchronous Components
 
-## Testing with Jest
+### Testing with Jest
 
 1. How Jest Works
 
