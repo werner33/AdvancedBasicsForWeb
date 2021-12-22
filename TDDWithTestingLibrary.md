@@ -25,7 +25,7 @@ We will start by building an InfoCard component that will included a title and s
 
     Open `InfoCard.test.js`. Let's follow the example of our previous code and write our first test just to test if the component is rendering properly. 
 
-    ```
+    ``` javascript
     import { render, screen } from '@testing-library/react';
     import InfoCard from '.././InfoCard';
 
@@ -39,7 +39,7 @@ We will start by building an InfoCard component that will included a title and s
 
     And here it is: 
 
-    ```
+    ``` javascript
 
         1 | import { render, screen } from '@testing-library/react';
       > 2 | import InfoCard from '.././InfoCard';
@@ -59,7 +59,7 @@ We will start by building an InfoCard component that will included a title and s
 
     Inside InfoCard.js add:
 
-    ```
+    ``` javascript
         import React from 'react';
 
         function InfoCard(props) {
@@ -75,7 +75,7 @@ We will start by building an InfoCard component that will included a title and s
 
     If you haven't stopped your test, you'll see that the test runs automatically and now, it passes! 
 
-    ```
+    ``` javascript
      PASS  src/components/infoCard/__test__/InfoCard.test.js
         ✓ renders InfoCard (15 ms)
 
@@ -98,7 +98,7 @@ We will start by building an InfoCard component that will included a title and s
 
     Write a second test like this: 
 
-    ```
+    ``` javascript
     test('it has an element to hold the title text', () => {
         const {getByTestId} = render(<InfoCard />);
         expect(getByTestId('infoCard__title')).toBeInTheDocument();
@@ -111,7 +111,7 @@ We will start by building an InfoCard component that will included a title and s
 
     We return to our InfoCard component and we'll add a `h3` element with the data-testid property.
 
-    ```
+    ``` javascript
         ...
         return (
                     <div>
@@ -126,7 +126,7 @@ We will start by building an InfoCard component that will included a title and s
 7. Test for Specific Text
     We want to pass a title prop into our Info Card component with some text. That text should then render inside of our H3 element. Let's write a test that describes that: 
     
-    ```
+    ``` javascript
         test('it renders the title text passed as a prop', () => {
             const {getByText} = render(<InfoCard title="Info Card Title">);
             expect(getByText('Info Card Title')).toBeInTheDocument();
