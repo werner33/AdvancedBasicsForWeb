@@ -30,7 +30,10 @@
 
 ### Week 5: Managing API calls and Caching
 
-1. 
+1. API Calls Overview
+2. Where Should Calls Be Made in an Application? 
+3. Code Splitting in React
+4. Caching in Session Storage
 
 ### Week 6: Testing APIs with Jest and Supertest
 
