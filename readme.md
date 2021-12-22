@@ -61,6 +61,8 @@
 
 ### Week 11: SQL 2
 
+1. [Joins](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SQL2.md)
+
 ### Week 12: Contributing to Open Source
 
 
