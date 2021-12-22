@@ -38,6 +38,8 @@
 
 ### Week 10: SQL 1
 
+[Video Recording]()
+
 ### Week 11: SQL 2
 
 ### Week 12: Contributing to Open Source
