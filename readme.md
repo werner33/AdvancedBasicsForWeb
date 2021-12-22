@@ -37,6 +37,8 @@
 
 ### Week 6: Testing APIs with Jest and Supertest
 
+[Outline](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SuperTest.md)
+
 ### Week 7: Session Storage, Local Storage, Cookies, and Cache
 
 ### Week 8: Git 1
