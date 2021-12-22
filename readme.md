@@ -32,7 +32,7 @@
 
 1. 
 
-### Week 6: Testing a Node Back-end with Jest and Supertest
+### Week 6: Testing APIs with Jest and Supertest
 
 ### Week 7: Session Storage, Local Storage, Cookies, and Cache
 
