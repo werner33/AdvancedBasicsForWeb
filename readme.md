@@ -1,12 +1,12 @@
 # Advanced Basics for Web
 
-### SCSS and BEM
+### Week 1: SCSS and BEM
 
-### Building Responsive Components
+### Week 2: Building Responsive Components
 
-### UX for Asynchronous Components
+### Week 3: UX for Asynchronous Components
 
-### Testing with Jest
+### Week 4: Testing with Jest
 
 1. How Jest Works
 
