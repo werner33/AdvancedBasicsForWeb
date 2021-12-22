@@ -40,6 +40,8 @@
 
 [Video recording](https://us06web.zoom.us/rec/share/KF6XLE355wgu1y87FPuf_0tXEG5OM-1SjXoPyHEIVR4bpqRg9mdJRg7r07GO1qZs.H7DUEOoxTNxh82Tm) Password: U8$Xq@7w
 
+1. [Review of Git])https://github.com/werner33/AdvancedBasicsForWeb/blob/main/Git.md)
+
  
 ### Week 9: Git 2
 
