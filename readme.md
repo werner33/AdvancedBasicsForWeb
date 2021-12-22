@@ -12,14 +12,28 @@
 
 [Video recording](https://us06web.zoom.us/rec/share/YKboI4HnNvvUJJ71qfw3AE8E_1oXbyd5XzvTcuAHGyIdubfxftUQRDNN6c7Rn-GU.MpXjApcQuwhGbPg1) Password: wjQ4E#JB
 
-### Week 4: Testing with Jest
+### Week 4: Testing Components with Jest
 
-1. How Jest Works
-
-2. Testing Front-End Components in React
+1. Testing Front-End Components in React
     1. [Adding Your First Test](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/TestingFEComponents.md)
     2. [TDD With Testing Library](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/TDDWithTestingLibrary.md)
     3. [TDD with Interactive Component](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/TDDWithInteractiveComponent.md)
     3. [Testing an Asyncronous Component](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/TestingAnAsyncrounousComponent.md)
 
-3. Testing a Node Back-end 
+### Week 5: Managing API calls and Caching
+
+### Week 6: Testing a Node Back-end with Jest and Supertest
+
+### Week 7: Session Storage, Local Storage, Cookies, and Cache
+
+### Week 8: Git 1
+ 
+### Week 9: Git 2
+
+### Week 10: SQL 1
+
+### Week 11: SQL 2
+
+### Week 12: Contributing to Open Source
+
+
