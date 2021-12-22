@@ -37,6 +37,9 @@
 ### Week 7: Session Storage, Local Storage, Cookies, and Cache
 
 ### Week 8: Git 1
+
+[Video recording](https://us06web.zoom.us/rec/share/KF6XLE355wgu1y87FPuf_0tXEG5OM-1SjXoPyHEIVR4bpqRg9mdJRg7r07GO1qZs.H7DUEOoxTNxh82Tm) Password: U8$Xq@7w
+
  
 ### Week 9: Git 2
 
