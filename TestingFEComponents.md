@@ -18,7 +18,7 @@ Let's go ahead and test our first component. We will largely follow a [Test Driv
 
     You should see something like this: 
 
-    ```
+    ``` javascript
     PASS  src/App.test.js
         ✓ renders learn react link (35 ms)
 
