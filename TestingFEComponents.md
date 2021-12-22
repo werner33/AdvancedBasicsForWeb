@@ -37,7 +37,7 @@ Let's go ahead and test our first component. We will largely follow a [Test Driv
 
     Go ahead and open `src/App.test.js`. You'll see code like this:
     
-    ```
+    ``` javascript
 
     import { render, screen } from '@testing-library/react';
     import App from './App';
