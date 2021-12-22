@@ -40,6 +40,11 @@
 
 [Video Recording]()
 
+1. [Understanding the Connection between SQL and Web Development](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SQL1.md)
+2. Refining Selectors when Making a Query
+3.
+4.
+
 ### Week 11: SQL 2
 
 ### Week 12: Contributing to Open Source
