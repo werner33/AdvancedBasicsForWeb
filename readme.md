@@ -37,7 +37,7 @@
 
 ### Week 6: Testing APIs with Jest and Supertest
 
-[Video recording](https://us06web.zoom.us/rec/share/LHomBO-BGPhfX9iZTijla6EtRpnfCDR4UNlaGoZBFMhWKVRGxxj4AWm2PeQCyTlw.XONhvGmF_1yv4t8Z)
+[Video recording](https://us06web.zoom.us/rec/share/LHomBO-BGPhfX9iZTijla6EtRpnfCDR4UNlaGoZBFMhWKVRGxxj4AWm2PeQCyTlw.XONhvGmF_1yv4t8Z) Password: &F$KT8Jt
 
 [Outline](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SuperTest.md)
 
