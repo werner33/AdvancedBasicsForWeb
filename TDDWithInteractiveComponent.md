@@ -1,6 +1,6 @@
 # Testing an Interactive Component
 
-So far we've looked at the basic react app out of the box, then we moved on to testing a custom component. In this section, let's move into testing a component that has some interactivity. In the last section we'll include interactivity and an asynchronous call to an external API. 
+So far we've looked at the basic react app out of the box, then we moved on to testing a custom component. In this section, let's move into testing a component that has some interactivity. In the last section we'll include interactivity. 
 
 1. Create a new Directory for a Counter
 
@@ -29,7 +29,7 @@ So far we've looked at the basic react app out of the box, then we moved on to t
 
     We want our component to have two parts: a presentation for the current count, with a testid of 'counter__display', starting at 0 and a button with some text that says 'click me'. On every click, the counter should increment by one. 
 
-    So first, use your knowledge from the previous lesson to write tests making sure the component has a '0' when it loads and a button with the text. 
+    So first, use your knowledge from the previous lesson to write tests making sure the component has a '0' when it loads and a button with the text 'click me'. 
 
     You know what to do. If you feel stuck, check the [previous lesson for clues](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/TDDWithTestingLibrary.md). 
 
