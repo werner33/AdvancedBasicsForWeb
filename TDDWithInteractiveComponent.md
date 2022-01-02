@@ -2,7 +2,7 @@
 
 So far we've looked at the basic react app out of the box, then we moved on to testing a custom component. In this section, let's move into testing a component that has some interactivity. In the last section we'll include interactivity. 
 
-1. Create a new Directory for a Counter
+1. Create a New Component for a Counter
 
     You already know the drill: in the same project create a new directory called `/counter`. Like last time, let's start with the nested folder called `__test__`. And of course next well create our test file called `Counter.test.js`. 
 
