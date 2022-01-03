@@ -153,16 +153,23 @@ Finally, we want to write a test to make sure the text changes when a new fact i
    ...
    
    it('should change fact text on API response' , async () => {
-       const {getByTestId, getByText, queryByText} = render(<CatFact />);
-              
-       let text = getByTestId('catFact__text').text;
+   
+       ...
        
-       getByTestId('catFact__button').click();
-       
-       await expect(queryByText(text)).not.toBeInTheDocument();
-   })
-  }
+       it('shows a new catfact on button click', async () => {
+        const {getByText, getByTestId, queryByText, findByText} = render(<CatFact />);
+        
+        expect(getByTestId("catFact__factText")).toBeEmptyDOMElement();
 
+        expect(getByText("Loading...")).toBeInTheDocument();
+
+        await findByText('Load Cat Fact');
+
+        expect(queryByText("Loading...")).not.toBeInTheDocument();
+
+        expect(getByTestId("catFact__factText")).not.toBeEmptyDOMElement();
+    })
+ })
 ```
 
 Write code to change the cat fact on a successful API response and this test should pass just fine. We don't know what text we are expecting, but we can test that the old text is no longer shown. 
