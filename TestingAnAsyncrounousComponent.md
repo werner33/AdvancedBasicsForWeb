@@ -66,11 +66,9 @@ Remember that setting up a testid on any HTML element looks like this:
 
 3. Writing the Tests for Initial Mount
 
-<!-- Until now, we have tested that our component will load correctly and that the elements of the component are in place. We need to go one big step further however and  verify that new cat facts can be loaded by clicking on the button. 
+When our component initially loads, we need to query the API on mount to bring in the first random cat fact. Until the fact is returned, we want our button to display 'Loading...' and we expect our text container to be empty.
 
-In order to set up out asynchronous tests, we must think through what will happen when we click our button. In this case, let's say that the button text should immediately change to say 'loading'. Once the call is returned, we expect the text to change to the new cat fact and then button text should return to 'Load Cat Fact'.
-
-Checking for the button text to change immediately is a synchronous change, no different than what we did with the Counter component in the previous section. Let's set that up now: -->
+Let's write a test that asserts that the button should say 'Loading...' when we first render our component: 
 
 ``` javascript
   ...
@@ -78,13 +76,26 @@ Checking for the button text to change immediately is a synchronous change, no d
   describe('CatFact displays random catfact on mount and a new one on each button click', () => {
    ...
    
-    it('button text initializes to "Loading..." on mount', () => {
+    it('button text initializes to "Loading..."', () => {
         
         const{getByText} = render(<CatFact />);
 
         expect(getByText('Loading...')).toBeInTheDocument();
 
     });
+  }
+
+```
+
+That's it. We are simply asserting that before anything happens, out button says 'Loading...'. If you run this in the browser when calling the API correctly, you may not even see the loading text. But our test is fast and will verify that the button defaults to 'Loading...' even if the API call is very fast.
+
+Now, we don't have a fact when the component initially loads, so we expect our text container to be empty. Let's write a test for this: 
+
+``` javascript
+  ...
+  
+  describe('CatFact displays random catfact on mount and a new one on each button click', () => {
+   ...
     
     it('has no text in textContainer on mount', () => {
         const{getByTestId} = render(<CatFact />);
@@ -95,9 +106,20 @@ Checking for the button text to change immediately is a synchronous change, no d
 
 ```
 
-Write the code to make this test pass. Note that you do not need to set up an API call, nor change the text back to 'Load Cat Fact' for this test to pass. 
+Write the code to make this test pass. Note that you do not need to set up an API call, nor change the button text for this test to pass. 
 
-4. Writing Tests for Component On Mount
+4. Writing Tests for Asynchronous Behaviour On Mount
+
+As soon as the component mounts, lets call out cat fact api. You can reach it here: `call to `https://catfact.ninja/fact`. The response from the API will look something like this: 
+
+``` json
+  {
+    "fact":"All cats have three sets of long hairs that are sensitive to pressure - whiskers, eyebrows,and the hairs between their paw pads.",
+    "length":128
+  }
+```
+
+We want to do two thigs and we need a test to assert each of them. First, we want our button text to change to 'Load Cat Fact' once our API response is returned.
 
 ``` javascript
   ...
@@ -113,7 +135,22 @@ Write the code to make this test pass. Note that you do not need to set up an AP
 
           expect(queryByText('Loading...')).not.toBeInTheDocument();
       })
+  })
 
+```
+
+Note that with this test, since we are testing something asynchronous, we need to preface our callback with the `async` keyword. 
+
+We need to check that once the call is returned, the button text is back to 'Load Cat Fact' and then fact itself has changed. We will use a new Jest method called `findByText` to do this. Using `findByText` tells our test to look for something and to remain looking for it for up to 4 seconds. If it is not found after 4 seconds, the test will fail. Otherwise the test will pass. Under any normal circumstances, our API should return the expected result in less than 4 seconds. 
+
+To make this test pass, create a hook called `loading` that starts as true but is set to false when the API returns. Then make the text on the button dependent on the hook. When `loading` is true, the button test should be 'Loading...' and then when it is false, the button text should be 'Load Cat Fact'. 
+
+We also introduce an assertion modifier here: `expect(queryByText('Loading...')).not.toBeInTheDocument();` We use not to say that we are looking for the opposite of the assertion. 
+
+Let's move on to asserting that on a successful API call, we place the text of the cat fact in the text container. 
+
+describe('', () => {
+  ...
     it('displays a catfact on successful mount', async () => {
         const {getByTestId, findByText} = render(<CatFact />);
 
@@ -125,20 +162,17 @@ Write the code to make this test pass. Note that you do not need to set up an AP
 
 ```
 
-5. Writing the Tests for Asynchronous Behavior
+Here we assert that after the successful API call, the text container is not empty. You can handle this by setting a hook called `catFact`, setting it to an empty string when you start and set it to the cat fact when the API returns. 
 
-Finally, we will wrap up our testing by making assertions for the asynchronous behaviors of our component. When the button is clicked, the component should make a call to `https://catfact.ninja/fact`. The response will look something like this: 
+5. Writing the Tests for Asynchronous Behavior on User Interaction
 
-``` json
-  {
-    "fact":"All cats have three sets of long hairs that are sensitive to pressure - whiskers, eyebrows,and the hairs between their paw pads.",
-    "length":128
-  }
-```
+Finally, we will wrap up our testing by making assertions for the asynchronous behaviors of our component when the button is clicked. The component should make a call to `https://catfact.ninja/fact` and replace the old fact with the new one. 
 
-We need to check that once the call is returned, the button text is back to 'Load Cat Fact' and then fact itself has changed. We will use a new Jest method called `findByTestId` and `findByText` to do this. Using `findBy` tells our test to look for something and to remain looking for it for up to 4 seconds. If it is not found after 4 seconds, the test will fail. Otherwise the test will pass. Under any normal circumstances, our API should return the expected result in less than 4 seconds. 
+We need to check that when the button is clicked, the text changes to 'Loading...'. Once the call is returned, the button text is back to 'Load Cat Fact'.
 
-Let's start by writing the test for the button text returning to 'Load Cat Fact'. Note that because we are testing asynchronous behavior, we need to preface our callback with the `async` keyword. When we use the `findByText` query we will use the corresponding `await` keyword. 
+Additionally,  the fact itself will have changed. 
+
+Let's start by writing the test for the button text changing and then returning to 'Load Cat Fact'. We will use the `click()` event here that we used in the last chapter. 
 
 ``` javascript
   ...
@@ -164,7 +198,7 @@ Let's start by writing the test for the button text returning to 'Load Cat Fact'
 
 ```
 
-Write the code to make this test pass. At this point, you will need to write an API call and set a hook to track the loading status as we've done in previous lessons.
+Write the code to make this test pass. 
 
 Finally, we want to write a test to make sure the text changes when a new fact is loaded. Since the facts are randomly loaded, we will save the current fact text and then make sure that it is no longer in the DOM after a new fact is loaded. Let's do that now: 
 
@@ -200,4 +234,5 @@ We have now written a good set of comprehensive tests for an asynchronous compon
 5. Conclusion
 
 Testing is a deep subject and we have only gotten started here. Take a look at the Jest or Testing Library documentation to learn more about what you can do with frontend testing. 
+
 
