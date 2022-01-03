@@ -113,9 +113,9 @@ Finally, we will wrap up our testing by making assertions for the asynchronous b
   }
 ```
 
-We need to check that once the call is returned, the button text is back to 'Load Cat Fact' and then fact itself has changed. We will use a new Jest method called `queryByTestId` and `queryByText` to do this. Using `queryBy` tells our test to look for something and to remain looking for it for up to 4 seconds. If it is not found after 4 seconds, the test will fail. Otherwise the test will pass. Under any normal circumstances, our API should return the expected result in less than 4 seconds. 
+We need to check that once the call is returned, the button text is back to 'Load Cat Fact' and then fact itself has changed. We will use a new Jest method called `findByTestId` and `findByText` to do this. Using `findBy` tells our test to look for something and to remain looking for it for up to 4 seconds. If it is not found after 4 seconds, the test will fail. Otherwise the test will pass. Under any normal circumstances, our API should return the expected result in less than 4 seconds. 
 
-Let's start by writing the test for the button text returning to 'Load Cat Fact'. Note that because we are testing asynchronous behavior, we need to preface our callback with the `async` keyword. 
+Let's start by writing the test for the button text returning to 'Load Cat Fact'. Note that because we are testing asynchronous behavior, we need to preface our callback with the `async` keyword. When we use the `findByText` query we will use the corresponding `await` keyword. 
 
 ``` javascript
   ...
