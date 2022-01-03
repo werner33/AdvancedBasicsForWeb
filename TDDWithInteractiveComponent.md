@@ -9,8 +9,8 @@ So far we've looked at the basic react app out of the box, then we moved on to t
     As with last time, we'll start by just writing a test to make sure our component renders properly, however, this time we will integrate one more Jest function, `describe`:
 
     ``` javascript
-    import { render, screen } from '@testing-library/react';
-    import Counter from '.././Counter';
+    import { render } from '@testing-library/react';
+    import Counter from '../Counter';
     
     describe('the counter has a button to increment the count by one each time its clicked', () => {
 
