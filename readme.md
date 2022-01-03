@@ -21,7 +21,7 @@
 
 [Video recording](https://us06web.zoom.us/rec/share/iepAFZ5WfRExlGMEFeCmMhJPww_2ZvhFLnKRGRCxWtxq-y4hBzl_G9wtqBOD-YWP.p9IYo8pbPdunN5Dk) Password: nvrVu^R2
 
-[Source Code](https://github.com/werner33/frontendTestingWithJest)
+[Source Code](https://github.com/werner33/testing_components_with_jest)
 
 1. [Adding Your First Test](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/TestingFEComponents.md)
 2. [TDD With Testing Library](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/TDDWithTestingLibrary.md)
