@@ -31,7 +31,7 @@ We'll start by writing our `describe` block with a basic text to render the comp
 
   import CatFact from '../CatFact';
   
-  describe('this is a component to load and display a random cat fact', () => {
+  describe('CatFact displays random catfact on mount and a new one on each button click', () => {
     
     it('renders CatFact component', () => {
         render(<CatFact />);
@@ -47,62 +47,91 @@ Then, we'll go ahead and write assertions for each of these two elements inside 
 ``` javascript
   ...
   
-  describe('this is a component to load and display a random cat fact', () => {
+  describe('CatFact displays random catfact on mount and a new one on each button click', () => {
    
     it('renders CatFact component', () => { 
         render(<CatFact />);
     });
     
-    it('has an area to display the text of a cat fact', () => {
+   it('has an element to display the text of a cat fact', () => {
         const {getByTestId} = render(<CatFact />);
         
         expect(getByTestId('catFact__textContainer')).toBeInTheDocument()
     })
     
-     it('has a button to load a new cat fact', () => {
-        const {getByTestId, getByText} = render(<CatFact />);
+    it('has a button to load a new cat fact', () => {
+        const {getByTestId} = render(<CatFact />);
         
         expect(getByTestId('catFact__button')).toBeInTheDocument();
-        expect(getByText('Load Cat Fact')).toBeInTheDocument();
-
-    })
+    });
   }
 
 ```
 
 Write the code to make these tests pass. 
 
-3. Writing the Tests for Synchronous Behavior
+3. Writing the Tests for Initial Mount
 
-Until now, we have tested that our component will load correctly and that the elements of the component are in place. We need to go one big step further however and  verify that new cat facts can be loaded by clicking on the button. 
+<!-- Until now, we have tested that our component will load correctly and that the elements of the component are in place. We need to go one big step further however and  verify that new cat facts can be loaded by clicking on the button. 
 
 In order to set up out asynchronous tests, we must think through what will happen when we click our button. In this case, let's say that the button text should immediately change to say 'loading'. Once the call is returned, we expect the text to change to the new cat fact and then button text should return to 'Load Cat Fact'.
 
-Checking for the button text to change immediately is a synchronous change, no different than what we did with the Counter component in the previous section. Let's set that up now:
+Checking for the button text to change immediately is a synchronous change, no different than what we did with the Counter component in the previous section. Let's set that up now: -->
 
 ``` javascript
   ...
   
-  describe('this is a component to load and display a random cat fact', () => {
+  describe('CatFact displays random catfact on mount and a new one on each button click', () => {
    ...
    
-   it('should change button text to "Loading" on clicking the button' , () => {
-       const {getByTestId, getByText} = render(<CatFact />);
-       
-       expect(getByText('Load Cat Fact')).toBeInTheDocument();
-       
-       getByTestId('catFact__button').click();
-       
-       expect(getByText('Loading')).toBeInTheDocument();
-   })
+    it('button text initializes to "Loading..." on mount', () => {
+        
+        const{getByText} = render(<CatFact />);
+
+        expect(getByText('Loading...')).toBeInTheDocument();
+
+    });
+    
+    it('has no text in textContainer on mount', () => {
+        const{getByTestId} = render(<CatFact />);
+
+        expect(getByTestId('catFact__textContainer')).toBeEmptyDOMElement()
+    })
   }
 
 ```
 
 Write the code to make this test pass. Note that you do not need to set up an API call, nor change the text back to 'Load Cat Fact' for this test to pass. 
 
+4. Writing Tests for Component On Mount
 
-4. Writing the Tests for Asynchronous Behavior
+``` javascript
+  ...
+
+  describe('', () => {
+  ...
+    it('changes button text to "Load Cat Fact" on successful mount', async () => {
+          const{getByText, findByText, queryByText} = render(<CatFact />);
+
+          expect(getByText('Loading...')).toBeInTheDocument();
+
+          await findByText('Load Cat Fact');
+
+          expect(queryByText('Loading...')).not.toBeInTheDocument();
+      })
+
+    it('displays a catfact on successful mount', async () => {
+        const {getByTestId, findByText} = render(<CatFact />);
+
+        await findByText('Load Cat Fact');
+
+        expect(getByTestId('catFact__textContainer')).not.toBeEmptyDOMElement();
+    })
+  })
+
+```
+
+5. Writing the Tests for Asynchronous Behavior
 
 Finally, we will wrap up our testing by making assertions for the asynchronous behaviors of our component. When the button is clicked, the component should make a call to `https://catfact.ninja/fact`. The response will look something like this: 
 
@@ -120,54 +149,52 @@ Let's start by writing the test for the button text returning to 'Load Cat Fact'
 ``` javascript
   ...
   
-  describe('this is a component to load and display a random cat fact', () => {
+  describe('CatFact displays random catfact on mount and a new one on each button click', () => {
    ...
    
-   it('should change button text to "Load Cat Fact" on API response' , async () => {
-       const {getByTestId, getByText, queryByText, findByText} = render(<CatFact />);
+  it('changes button text on button click until API responds', async () => {
        
-       expect(getByText('Load Cat Fact')).toBeInTheDocument();
-       
-       getByTestId('catFact__button').click();
-       
-       expect(getByText('Loading')).toBeInTheDocument();
-       
-       await findByText('Load Cat Fact');
-       
-       expect(getByText('Load Cat Fact').toBeInTheDocument();
-       expect(queryByText('Load Cat Fact').not.toBeInTheDocument();
+        const{getByTestId, findByText, queryByText} = render(<CatFact />);
 
-   })
+        await findByText('Load Cat Fact');
+
+        let button = getByTestId('catFact__button');
+        
+        button.click();
+
+        await findByText('Load Cat Fact');
+        
+        expect(queryByText("Loading...")).not.toBeInTheDocument();
+    })
   }
 
 ```
 
 Write the code to make this test pass. At this point, you will need to write an API call and set a hook to track the loading status as we've done in previous lessons.
 
-Finally, we want to write a test to make sure the text changes when a new fact is loaded. Since the facts are randomly loaded, we will save the current fact rext and then make sure that it is no longer in the DOM after a new fact is loaded. Let's do that now: 
+Finally, we want to write a test to make sure the text changes when a new fact is loaded. Since the facts are randomly loaded, we will save the current fact text and then make sure that it is no longer in the DOM after a new fact is loaded. Let's do that now: 
 
 ``` javascript
   ...
   
-  describe('this is a component to load and display a random cat fact', () => {
+  describe('CatFact displays random catfact on mount and a new one on each button click', () => {
    ...
    
-   it('should change fact text on API response' , async () => {
-   
-       ...
-       
-       it('shows a new catfact on button click', async () => {
-        const {getByText, getByTestId, queryByText, findByText} = render(<CatFact />);
-        
-        expect(getByTestId("catFact__factText")).toBeEmptyDOMElement();
-
-        expect(getByText("Loading...")).toBeInTheDocument();
+   it('changes cat fact text on button click', async () => {
+        const{getByTestId, findByText, queryByText, queryByTestId} = render(<CatFact />);
 
         await findByText('Load Cat Fact');
 
-        expect(queryByText("Loading...")).not.toBeInTheDocument();
+        let firstCatFact = getByTestId("catFact__textContainer").innerHTML;
 
-        expect(getByTestId("catFact__factText")).not.toBeEmptyDOMElement();
+        let button = getByTestId('catFact__button');
+        
+        button.click();
+
+        await findByText('Load Cat Fact');
+
+        expect(queryByText(firstCatFact)).not.toBeInTheDocument();
+        expect(queryByTestId("catFact__textContainer")).not.toBeEmptyDOMElement();
     })
  })
 ```
