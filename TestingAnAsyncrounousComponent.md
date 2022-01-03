@@ -124,7 +124,7 @@ Let's start by writing the test for the button text returning to 'Load Cat Fact'
    ...
    
    it('should change button text to "Load Cat Fact" on API response' , async () => {
-       const {getByTestId, getByText, queryByText} = render(<CatFact />);
+       const {getByTestId, getByText, queryByText, findByText} = render(<CatFact />);
        
        expect(getByText('Load Cat Fact')).toBeInTheDocument();
        
@@ -132,7 +132,11 @@ Let's start by writing the test for the button text returning to 'Load Cat Fact'
        
        expect(getByText('Loading')).toBeInTheDocument();
        
-       await expect(queryByText('Load Cat Fact').toBeInTheDocument();
+       await findByText('Load Cat Fact');
+       
+       expect(getByText('Load Cat Fact').toBeInTheDocument();
+       expect(queryByText('Load Cat Fact').not.toBeInTheDocument();
+
    })
   }
 
