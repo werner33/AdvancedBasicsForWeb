@@ -128,7 +128,7 @@ We will start by building an InfoCard component that will included a title and s
     
     ``` javascript
         test('it renders the title text passed as a prop', () => {
-            const {getByText} = render(<InfoCard title="Info Card Title">);
+            const {getByText} = render(<InfoCard title="Info Card Title" />);
             expect(getByText('Info Card Title')).toBeInTheDocument();
         })
     ```
