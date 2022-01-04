@@ -15,7 +15,16 @@ Let's build something simple like this:
 <img width="406" alt="Screen Shot 2021-12-06 at 1 40 53 PM" src="https://user-images.githubusercontent.com/692461/144903284-a859778a-7c17-4d8d-8350-b61e7dd9ea51.png">
 
 
-Let's set the whole card up inside of a div with a class name of 'userCard'. Then each element under that, we can nest in our SCSS:
+Let's outline the whole card up with HTML:
+
+``` HTML
+
+
+
+```
+
+
+Then each element under that, we can nest in our SCSS:
 
 ``` CSS
 .userCard {
