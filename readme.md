@@ -6,7 +6,7 @@
 
 1. [What is SCSS](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSS.md)
 1. [Using SCSS in Your React Project](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSSInYourProject)
-2. [What is BEM]()
+2. [What is BEM](https://github.com/werner33/AdvancedBasicsForWeb/new/main)
 
 ### Section 2: Building Responsive Components
 
