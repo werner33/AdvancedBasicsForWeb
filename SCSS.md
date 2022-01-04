@@ -25,9 +25,5 @@ Let's set the whole card up inside of a div with a class name of 'userCard'. The
   }
 }
 ```
-Let's work through styling more of this card, nesting our styling as we go. 
-
-# BEM
-
-[Get BEM](http://getbem.com/naming/)
+Let's work through styling more of this card, nesting our styling as we go.
 
