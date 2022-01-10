@@ -67,6 +67,13 @@ The respective API calls should be made from the component showing the data.
 
 ``` javascript
   const About = React.lazy(() => import('../about/About'));
+  
+  ...
+  
+  
+   <Suspense fallback={<div>Loading...</div>}>
+        <About />
+    </Suspense>
 ```
 
 5. Caching in Session Storage
