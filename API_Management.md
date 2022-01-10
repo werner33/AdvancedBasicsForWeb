@@ -49,17 +49,17 @@ We may want to make a call with special information or parameters. We can set a 
  
  There are three main components structured like this: 
  
- APP
-   |----- StudentCollection
-   |----- Schedule
+ APP\
+   |----- StudentCollection\
+   |----- Schedule\
    
 The respective API calls should be made from the component showing the data. 
 
- APP
-   |----- StudentCollection
-        - fetch student data here
-   |----- Schedule
-        - fetch schedule of events here 
+ APP\
+   |----- StudentCollection\
+        - fetch student data here\
+   |----- Schedule\
+        - fetch schedule of events here\ 
 
 4. Code Splitting in React
 
