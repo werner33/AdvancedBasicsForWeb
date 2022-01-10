@@ -49,20 +49,23 @@ We may want to make a call with special information or parameters. We can set a 
  
  There are three main components structured like this: 
  
- APP\
+ App\
    |----- StudentCollection\
-   |----- Schedule\
+   |----- Schedule
    
 The respective API calls should be made from the component showing the data. 
 
- APP\
+ App\
    |----- StudentCollection\
         - fetch student data here\
    |----- Schedule\
-        - fetch schedule of events here\ 
+        - fetch schedule of events here
 
 4. Code Splitting in React
 
+When we send our React project to a client or browser, the whole application is sent by default. The components are not all rendered but the code is all included in the `bundle.js`. This is fine for a small application, but as our application grows, we should see if we can avoid sending code that a user may not use. One strategy we can employ is [Code Splitting](https://reactjs.org/docs/code-splitting.html). 
+
+Let's look at an example where we 'split' one of our routes into its own bundle. 
 
 
 ``` javascript
