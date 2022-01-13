@@ -20,8 +20,10 @@ Let's outline the whole card up with HTML:
 ``` HTML
 
 <div class="infoCard">
-  <div class="title" />
-  <div class="text" />
+  <div class="title">Info Card</div>
+  <div class="text"> 
+    This is an info card with some content.
+  </div>
 </div>
 
 ```
@@ -32,9 +34,14 @@ Then each element under that, we can nest in our SCSS:
 ``` CSS
 .infoCard {
   text-align: center;
+  border: 1px solid black;
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px;
   
   .title {
    font-weight: 600;
+   padding: 10px;
   }
   
 }
