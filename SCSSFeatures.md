@@ -34,3 +34,7 @@ First, well name our file `colors` but preface it with a `_`: `_colors.scss`.
 
 Then we will import it into another SCSS file by putting the following line at the top:
 `@import './_colors' (Depending on how your project is layed out, you may need to alter the path.)
+
+# Continuing with SCSS
+
+SCSS offers some additional wonderful features. You can learn more about them at [SASS Basics](https://sass-lang.com/guide)
