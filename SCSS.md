@@ -4,7 +4,7 @@ As a web project grows, it can be quite difficult to manage ever growing CSS fil
 
 # Prerequisites
 
-Before beginning this lesson, you should be familiar with
+Before beginning this lesson, you should be familiar with <br />
 [HTML](https://github.com/joinpursuit/Pursuit-Core-Web/tree/master/html_css_dom/html_introduction_combined)  <br /> 
 [CSS](https://github.com/joinpursuit/Pursuit-Core-Web/tree/master/html_css_dom/css_intro)  <br />
 [Building a React Application](https://github.com/joinpursuit/Pursuit-Core-Web/blob/master/react/README.md) 
