@@ -5,8 +5,10 @@
 [Video recording](https://us06web.zoom.us/rec/share/UcJhx6wlsM2MvWaQXe_moXL5in4bTnbHeM_mKe7MEN87_myOhVbwqmJJOtr1k5Fv.Vkzd3BQPU1YjPkLO) Password: %4kBUbMc 
 
 1. [What is SCSS](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSS.md)
-1. [Using SCSS in Your React Project](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSSInYourProject)
 2. [What is BEM](https://github.com/werner33/AdvancedBasicsForWeb/new/main)
+3. [Using SCSS in Your React Project](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSSInYourProject)
+4. [Other SCSS Features]()
+
 
 ### Section 2: Building Responsive Components
 
