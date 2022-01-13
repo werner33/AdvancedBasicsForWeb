@@ -1,5 +1,3 @@
-# Using SCSS in Your Own Project
-
 # How to Include SCSS in your Project
 
 We can install SCSS for React through NPM just like many other packages. Go to [Install SCSS](https://www.npmjs.com/package/node-sass) to learn more about this library. When you're ready, go ahead and run `npm install node-sass` in your project, whereever your frontend files are. 
