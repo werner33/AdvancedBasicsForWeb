@@ -36,9 +36,9 @@ Make a file called `InfoCard.js` with the following content:
  const InfoCard = () => {
   
   return (
-    <div class="infoCard"> 
-      <div class="infoCard__title">Info Card</div>
-      <div class="infoCard__text"> 
+    <div className="infoCard"> 
+      <div className="infoCard__title">Info Card</div>
+      <div className="infoCard__text"> 
         This is an info card with some content.
       </div>
     </div>
