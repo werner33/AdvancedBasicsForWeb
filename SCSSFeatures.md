@@ -1,30 +1,58 @@
-# What Can SCSS Do?
+# What More Can SCSS Do?
 
-The reality is that SCSS doesn't take long to learn and significatly improves your front-end work flow. You can check out [Learn SASS](https://sass-lang.com/guide) to see the different things SCSS can do. 
-
-We're going to spend the rest of class learning a few of them. 
+The reality is that SCSS doesn't take long to learn and significatly improves your front-end work flow. We're going to spend the rest of class looking at a few more SCSS features. 
 
 # Variables
 
-Let's imagine we want to set a background color for our `InfoCard`. Lets set a background color of #...
+Let's imagine we want to set a background color for our `InfoCard`. Lets set a background color of `#99d6ff`. It's basically a light blue.
 
-Just like with any other code, we may have values that are easier to access and remember when they are set to variables. 
+Let's update our `InfoCard.scss` file: 
 
-Let's start with a simple example: colors. We often use the same colors over and over in a project. Lets create a variable for one of our colors and see how to use it. 
-
-`$primary-color: #333;`
-
-This will instantiate this variable and allow us to use it throughout our file. 
-
-``` CSS
-.userCard {
- .userName {
-  color: $primary-color;
- }
+``` css 
+.infoCard {
+  text-align: center;
+  border: 1px solid black;
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #99d6ff;
+  
+  &__title {
+   font-weight: 600;
+   padding: 10px;
+  } 
 }
+
 ```
 
-Now, instead of working to remember the hexagonal number for our CSS color, we  can choose an eaasy to remember name that can be shared across the project. 
+We often use the same colors in many places in an application. At the same time, it can be difficult to remember the hex number that represents a particular color.  Just like with any other code, we may have values that are easier to access and remember when they are set to variables. Let's use SASS to set a variable for this color.  
+
+A variable name in SASS always starts with a `$` followed by a string. Let's call this color `$sky-blue`.
+
+`$sky-blue: #99d6ff;`
+
+In order to use this variable, lets set it at the top of our `InfoCard.scss` file and then use it like this: 
+
+``` css 
+$sky-blue: #99d6ff;
+
+.infoCard {
+  text-align: center;
+  border: 1px solid black;
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $sky-blue;
+  
+  &__title {
+   font-weight: 600;
+   padding: 10px;
+  }
+}
+
+```
+
+We can now use this variable any number of times in this file.
 
 # Partials
 
@@ -32,10 +60,44 @@ CSS files can get very large as your project grows. Just like JavaScript files, 
 
 Let's make an example based on what we just learned with variables.
 
-First, well name our file `colors` but preface it with a `_`: `_colors.scss`.
+First, we'll create a  file called `_colors.scss`. Note that because it will be imported into another SASS file, the file name starts with `_`. 
 
-Then we will import it into another SCSS file by putting the following line at the top:
-`@import './_colors' (Depending on how your project is layed out, you may need to alter the path.)
+Let's move our variable `$sky-blue` into this `_colors.scss` file. 
+
+``` css 
+$sky-blue: #99d6ff;
+
+```
+
+For now, that is all we will put here, but we can build out a palatte of colors as our project grows.
+
+
+Next, we will remove the `$sky-blue` variable from `InfoCard.scss` and import our `_colors.scss` file:
+
+``` css 
+@import './colors.scss'
+
+.infoCard {
+  text-align: center;
+  border: 1px solid black;
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $sky-blue;
+  
+  &__title {
+   font-weight: 600;
+   padding: 10px;
+  }
+}
+
+```
+
+(Depending on how your project is layed out, you may need to alter the import path.)
+
+Although the partial is written with an underscore at the beginning of the name, the underscore is omitted when the file is imported. 
+
+We are now set up to include and use this and any other variables we create throughout the application. 
 
 # Continuing with SCSS
 
