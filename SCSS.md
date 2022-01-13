@@ -65,5 +65,5 @@ However, as long as we have selected the SCSS from the dropdown (as shown above)
 
 We have only scratched the surface of what is possible through SCSS, but hopefully this demonstrates that it is just CSS with a few extra capabilities. You can always run vanilla CSS in a file ending with `.scss'. 
 
-Before we move into working on a React project, [let's improve our Info Card by using BEM notation]().
+Before we move into working on a React project, [let's improve our Info Card by using BEM notation](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/UsingBEM).
 
