@@ -12,14 +12,17 @@ First, in the CSS box, select SCSS from the drop down menu.
 
 Let's build something simple like this:
 
-<img width="406" alt="Screen Shot 2021-12-06 at 1 40 53 PM" src="https://user-images.githubusercontent.com/692461/144903284-a859778a-7c17-4d8d-8350-b61e7dd9ea51.png">
+<img width="359" alt="Screen Shot 2022-01-13 at 2 30 45 PM" src="https://user-images.githubusercontent.com/692461/149396750-ca0c3e22-7715-452a-bdcb-96228b952e73.png">
 
 
 Let's outline the whole card up with HTML:
 
 ``` HTML
 
-
+<div class="infoCard">
+  <div class="title" />
+  <div class="text" />
+</div>
 
 ```
 
@@ -27,12 +30,15 @@ Let's outline the whole card up with HTML:
 Then each element under that, we can nest in our SCSS:
 
 ``` CSS
-.userCard {
-  .profileImage {
-    border-radius: 20px;
-    height: 40px;
+.infoCard {
+  text-align: center;
+  
+  .title {
+   font-weight: 600;
   }
+  
 }
 ```
+
 Let's work through styling more of this card, nesting our styling as we go.
 
