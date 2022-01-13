@@ -1,4 +1,4 @@
-### Using SCSS in Your Own Project
+# Using SCSS in Your Own Project
 
 # How to Include SCSS in your Project
 
