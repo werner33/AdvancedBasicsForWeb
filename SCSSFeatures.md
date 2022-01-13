@@ -6,6 +6,8 @@ We're going to spend the rest of class learning a few of them.
 
 # Variables
 
+Let's imagine we want to set a background color for our `InfoCard`. Lets set a background color of #...
+
 Just like with any other code, we may have values that are easier to access and remember when they are set to variables. 
 
 Let's start with a simple example: colors. We often use the same colors over and over in a project. Lets create a variable for one of our colors and see how to use it. 
