@@ -1,4 +1,4 @@
-### Using BEM in Your Project
+# Using BEM in Your Project
 
 It can be a challenge to set a consistent standard for how you are using class names across a web application. While there are many possible patterns you can follow, we will be learning one called BEM. BEM is an acronym standing for Block Element Modifier.
 
