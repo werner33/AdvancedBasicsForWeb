@@ -2,6 +2,15 @@
 
 As a web project grows, it can be quite difficult to manage ever growing CSS files and nested HTML elements. In this lesson, we're going to learn some approaches and tools that can help us manage this complexity.
 
+# Prerequisites
+
+Before beginning this lesson, you should be familiar with
+[HTML](https://github.com/joinpursuit/Pursuit-Core-Web/tree/master/html_css_dom/html_introduction_combined) \ 
+[CSS](https://github.com/joinpursuit/Pursuit-Core-Web/tree/master/html_css_dom/css_intro) \
+[Building a React Application](https://github.com/joinpursuit/Pursuit-Core-Web/blob/master/react/README.md) 
+
+You can review any of those things at their respective links.
+
 # SCSS
 
 SCSS (called Sass, as in, don't give me that sass!) is a CSS engine that allows us to nest our css, similar to how we nest HTML elements. Before we implement it in a React project, let's give it try by starting out on [jsFiddle.net](https://www.jsfiddle.net). 
