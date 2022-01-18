@@ -5,7 +5,7 @@
 [Video recording](https://us06web.zoom.us/rec/share/rNUjdMBTVDzfy4nXCCPinBSRLUET4DI_6do1vSCszQ1a5GxLo1hTf73pocGNuRNB.qR5h4dfwGSXmvK1X) Password: %4kBUbMc 
 
 1. [What is SCSS](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSS.md)
-2. [What is BEM](https://github.com/werner33/AdvancedBasicsForWeb/new/main)
+2. [What is BEM](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/UsingBEM.md)
 3. [Using SCSS in Your React Project](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSSInYourProject.md)
 4. [Other SCSS Features](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSSFeatures.md)
 
