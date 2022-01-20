@@ -24,7 +24,7 @@
 
 ### Section 4: Testing Components with Jest
 
-[Video recording](https://us06web.zoom.us/rec/share/iepAFZ5WfRExlGMEFeCmMhJPww_2ZvhFLnKRGRCxWtxq-y4hBzl_G9wtqBOD-YWP.p9IYo8pbPdunN5Dk) Password: nvrVu^R2
+[Video recording](https://us06web.zoom.us/rec/share/OO03gD39Z1UdGvPmry08BlYbsGTduUjTvYx4kOY42JZdYsb3WKDdyyecpNPLijFa.mecKR7_UJo3K_qnK) Password: 6YHnm?$q
 
 [Source Code](https://github.com/werner33/testing_components_with_jest)
 
