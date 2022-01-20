@@ -81,27 +81,58 @@ Let's look at an example where we 'split' one of our routes into its own bundle.
 
 5. Caching in Session Storage
 
-Imagine we are working on a weather API that shows the current days weather but additionally shows the past ten days of weather. It's reasonable to think that the user may want to refresh the data to see if the forecast has changed, but what will not change is the weather from the past ten days. We don't want to requery both APIs whenever we refresh our app. 
+Imagine we are working on an app that suggests 10 random coffee types to a user each time they load our app. The randomness is seen as desirable as it keeps users coming back to learn about different coffees. However, once they load the randome coffees, in their browser, we don't want the coffee selection to change until they close that tab. For this, we might use a type of short term storage available through the browser called Session storage.
 
-We can handle a situation like this by storing the past data to session storage. Our API will first check if the data is stored in the browser, if so, no round trip is necessary. If it is not, we will make a call for the past data. The current data will always be called on refresh because its reasonable to think the user may be looking for the latest forecast. 
+Session storage will store a key value pair where both the key and value are strings. This will be a bit tricky since we will be getting our coffee information back as JSON. 
+
+First, let's look at the basic fetch request to get five random coffees. 
 
 ``` javascript 
 
-if(sessionStorage.pastWeather ){
-   setPastWeather([...JSON.parse(sessionStorage.pastWeather), ...pastWeather])
-} else {
-    let url = 'https://weather.com/pastWeather';
-
-    fetch(url)
+    let url = 'https://random-data-api.com/api/coffee/random_coffee?size=5';
+    
+    useEffect( () => {
+       fetch(url)
         .then(res => res.json())
         .then((result) => {
-            setPastWeather([...pastWeather]); 
-            sessionStorage.setItem('pastWeather', JSON.stringify(result))
+            setCoffees([result]); 
         },
 
-            (error) => {
-            console.log(error);
-            }
+          (error) => {
+           console.log(error);
+          }
         );
-}
+    }, [] )
 ``` 
+
+This code should be familiar. If we include this in a React component it will grab 5 random coffees each time the component is mounted. 
+
+What can we do to prevent getting 5 new random coffees on a refresh? We can save the data to session storage and load it from there.
+
+Let's modify the code above to utilise session storage: 
+
+
+``` javascript 
+
+    let url = 'https://random-data-api.com/api/coffee/random_coffee?size=5';
+    
+    useEffect( () => {
+    
+      if(sessionStorage.coffees ){
+        setCoffees([...JSON.parse(sessionStorage.coffees)])
+      } else {
+       fetch(url)
+        .then(res => res.json())
+        .then((result) => {
+            setCoffees([result]); 
+            sessionStorage.setItem('coffees', JSON.stringify(result))
+
+        },
+          (error) => {
+           console.log(error);
+          }
+        );
+    }, [] )
+``` 
+
+Right after we set our hook, we save the data to session storage. With this data saved  
