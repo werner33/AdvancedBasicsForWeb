@@ -28,7 +28,7 @@ Learning Objectives:
 [Source Code](https://github.com/werner33/react-responsive-navbar)
 
 1. [What is a Responsive Component](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/BuildingResponsiveComponents.md)
-2. [Laying Out a Nav Bar](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/BuildingANavBar.md)
+2. [Laying Out a Nav Bar](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/LayOutNavBar.md)
 3. [Introducing Media Queries]()
 4. [Using Hooks to Toggle Our Responsive Nav Bar]()
 
