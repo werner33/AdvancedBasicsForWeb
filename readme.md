@@ -2,6 +2,11 @@
 
 ### Section 1: SCSS and BEM
 
+Learning Objectives: 
+
+1. Be able to Implement SCSS in a React Project 
+2. Understand SCSS nesting, partials and variables and be able to use them in a React project
+
 [Video recording](https://us06web.zoom.us/rec/share/rNUjdMBTVDzfy4nXCCPinBSRLUET4DI_6do1vSCszQ1a5GxLo1hTf73pocGNuRNB.qR5h4dfwGSXmvK1X) Password: %4kBUbMc 
 
 1. [What is SCSS](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSS.md)
@@ -12,9 +17,20 @@
 
 ### Section 2: Building Responsive Components
 
+Learning Objectives:
+
+1. Able to explain what a responsive component is
+2. Able to use Media Queries to conditionally attach styles to the DOM
+3. Able to build responsive components in a React project
+
 [Video recording](https://us06web.zoom.us/rec/share/XOdkPa1YWKnTllJ0GNMlYh4Mz9C90v0WMcjbkXuzl8x1YgSmsOFIBzUB7IE8ngLQ.s743OcrH7F9vsPdH) Password: JDnT8H4$
 
 [Source Code](https://github.com/werner33/react-responsive-navbar)
+
+1.[What is a Responsive Component](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/BuildingResponsiveComponents.md)
+2. Laying Out a Nav Bar
+3. Introducing Media Queries
+4. Using Hooks to Toggle Our Responsive Nav Bar
 
 ### Section 3: UX for Asynchronous Components
 
