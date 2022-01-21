@@ -14,7 +14,7 @@
 
 [Video recording](https://us06web.zoom.us/rec/share/XOdkPa1YWKnTllJ0GNMlYh4Mz9C90v0WMcjbkXuzl8x1YgSmsOFIBzUB7IE8ngLQ.s743OcrH7F9vsPdH) Password: JDnT8H4$
 
-[Source Code](https://github.com/werner33/buildingComponentsWithAsyncUI)
+[Source Code](https://github.com/werner33/react-responsive-navbar)
 
 ### Section 3: UX for Asynchronous Components
 
