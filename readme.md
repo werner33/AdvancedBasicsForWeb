@@ -7,7 +7,7 @@ Learning Objectives:
 1. Be able to Implement SCSS in a React Project 
 2. Understand SCSS nesting, partials and variables and be able to use them in a React project
 
-[Video recording](https://us06web.zoom.us/rec/share/rNUjdMBTVDzfy4nXCCPinBSRLUET4DI_6do1vSCszQ1a5GxLo1hTf73pocGNuRNB.qR5h4dfwGSXmvK1X) Password: %4kBUbMc 
+[Video recording](https://us06web.zoom.us/rec/share/rNUjdMBTVDzfy4nXCCPinBSRLUET4DI_6do1vSCszQ1a5GxLo1hTf73pocGNuRNB.qR5h4dfwGSXmvK1X)
 
 1. [What is SCSS](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSS.md)
 2. [What is BEM](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/UsingBEM.md)
@@ -23,7 +23,7 @@ Learning Objectives:
 2. Able to use Media Queries to conditionally attach styles to the DOM
 3. Able to build responsive components in a React project
 
-[Video recording](https://us06web.zoom.us/rec/share/XOdkPa1YWKnTllJ0GNMlYh4Mz9C90v0WMcjbkXuzl8x1YgSmsOFIBzUB7IE8ngLQ.s743OcrH7F9vsPdH) Password: JDnT8H4$
+[Video recording](https://us06web.zoom.us/rec/share/XOdkPa1YWKnTllJ0GNMlYh4Mz9C90v0WMcjbkXuzl8x1YgSmsOFIBzUB7IE8ngLQ.s743OcrH7F9vsPdH)
 
 [Source Code](https://github.com/werner33/react-responsive-navbar)
 
@@ -34,13 +34,13 @@ Learning Objectives:
 
 ### Section 3: UX for Asynchronous Components
 
-[Video recording](https://us06web.zoom.us/rec/share/YKboI4HnNvvUJJ71qfw3AE8E_1oXbyd5XzvTcuAHGyIdubfxftUQRDNN6c7Rn-GU.MpXjApcQuwhGbPg1) Password: wjQ4E#JB
+[Video recording](https://us06web.zoom.us/rec/share/YKboI4HnNvvUJJ71qfw3AE8E_1oXbyd5XzvTcuAHGyIdubfxftUQRDNN6c7Rn-GU.MpXjApcQuwhGbPg1)
 
 [Source Code](https://github.com/werner33/button-loader)
 
 ### Section 4: Testing Components with Jest
 
-[Video recording](https://us06web.zoom.us/rec/share/OO03gD39Z1UdGvPmry08BlYbsGTduUjTvYx4kOY42JZdYsb3WKDdyyecpNPLijFa.mecKR7_UJo3K_qnK) Password: 6YHnm?$q
+[Video recording](https://us06web.zoom.us/rec/share/OO03gD39Z1UdGvPmry08BlYbsGTduUjTvYx4kOY42JZdYsb3WKDdyyecpNPLijFa.mecKR7_UJo3K_qnK)
 
 [Source Code](https://github.com/werner33/testing_components_with_jest)
 
