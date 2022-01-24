@@ -51,7 +51,9 @@ Learning Objectives:
 
 ### Section 5: Managing API calls and Caching
 
-1. API Calls Overview
+[Video recording](https://us06web.zoom.us/rec/share/i139O6kgdlQVmKy_U-HZmjES4Os2fXc7y1qqm1NrJcT7gf0kYlWvN-b0OfMnZ_On.510fvVrueHcg7S3J)
+
+1. [API Calls Overview](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/API_Management.md)
 2. Where Should Calls Be Made in an Application? 
 3. Code Splitting in React
 4. Caching in Session Storage
