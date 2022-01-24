@@ -51,6 +51,12 @@ Learning Objectives:
 
 ### Section 5: Managing API calls and Caching
 
+Learning objectives: 
+
+1. Understand how and where API's should be called in a React Application
+2. Able to split code in React for better user experience and faster loading times
+3. Able to save and access data in session storage
+
 [Video recording](https://us06web.zoom.us/rec/share/i139O6kgdlQVmKy_U-HZmjES4Os2fXc7y1qqm1NrJcT7gf0kYlWvN-b0OfMnZ_On.510fvVrueHcg7S3J)
 
 1. [API Calls Overview](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/API_Management.md)
