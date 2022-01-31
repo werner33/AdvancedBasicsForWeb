@@ -66,7 +66,9 @@ Learning objectives:
 
 ### Section 6: Testing APIs with Jest and Supertest
 
-[Video recording](https://us06web.zoom.us/rec/share/LHomBO-BGPhfX9iZTijla6EtRpnfCDR4UNlaGoZBFMhWKVRGxxj4AWm2PeQCyTlw.XONhvGmF_1yv4t8Z) Password: &F$KT8Jt
+[Video recording](https://us06web.zoom.us/rec/share/ZpEzyy8cN0iFowpvbtWWoPZQehwFdI-ySxgWoV81xQUlAnyBtBMWuGoJ7MtXWk8V.BPNdCc-Q7sj7lLcp)
+
+[Source Code](https://github.com/werner33/unit-testing-be)
 
 [Outline](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SuperTest.md)
 
