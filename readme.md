@@ -66,6 +66,12 @@ Learning objectives:
 
 ### Section 6: Testing APIs with Jest and Supertest
 
+Learning Objectives: 
+
+1. Implement Jest in Express app 
+2. Write and run unit tests
+3. Write and run integration tests on specific routes
+
 [Video recording](https://us06web.zoom.us/rec/share/ZpEzyy8cN0iFowpvbtWWoPZQehwFdI-ySxgWoV81xQUlAnyBtBMWuGoJ7MtXWk8V.BPNdCc-Q7sj7lLcp)
 
 [Source Code](https://github.com/werner33/unit-testing-be)
