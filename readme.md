@@ -73,6 +73,8 @@ Learning Objectives:
 3. Write and run integration tests on specific routes
 
 [Video recording](https://us06web.zoom.us/rec/share/ZpEzyy8cN0iFowpvbtWWoPZQehwFdI-ySxgWoV81xQUlAnyBtBMWuGoJ7MtXWk8V.BPNdCc-Q7sj7lLcp)
+OR 
+[Video recording](https://us06web.zoom.us/rec/play/TOcmrzeqI1ZjOUTRbEs7HiZ08-nij_KjqWrpji4UKXWlrfkHOZn-dMyaDP87G298gKmc_TX5yTTuuwCQ.LAL-8gwgVlrobDVN?startTime=1643643373000)
 
 [Source Code](https://github.com/werner33/unit-testing-be)
 
