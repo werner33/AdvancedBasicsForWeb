@@ -68,7 +68,7 @@ Learning objectives:
 
 Learning Objectives: 
 
-1. Implement Jest in Express app 
+1. Implement Jest and Supertest in Express app 
 2. Write and run unit tests
 3. Write and run integration tests on specific routes
 
@@ -82,7 +82,16 @@ OR
 
 ### Section 7: Session Storage, Local Storage, Cookies, and Cache
 
-1. TODO
+Learning Objectives: 
+
+1. Able to reason about when and how data should be stored in the browser
+2. Able to talk about the difference between ways to store data in the browser
+
+1. [Overview of Client Side Storage]()
+2. [Cookies]()
+3. [Session Storage]()
+4. [Local Storage]()
+5. [Cache]()
 
 ### Section 8: Git 1
 
