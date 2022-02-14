@@ -87,6 +87,9 @@ Learning Objectives:
 1. Able to reason about when and how data should be stored in the browser
 2. Able to talk about the difference between ways to store data in the browser
 
+[Video Recording]()
+[Source Code]()
+
 1. [Overview of Client Side Storage](https://github.com/werner33/AdvancedBasicsForWeb/new/main)
 2. [Cookies]()
 3. [Session Storage]()
