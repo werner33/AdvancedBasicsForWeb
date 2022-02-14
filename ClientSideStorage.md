@@ -2,7 +2,9 @@
 
 In order to give users the best experience possible, we may want to store some data in the browser. This could be something relatively simple such as a set of user preferences or some JSON data, stored as a string. In this course, we looked at one example of this through using session storage to cut down on unneccessary API calls. 
 
-Each of the four ways to store data in the browser has its pros and cons. Through this lesson, we'll look at the best way to work with each of them. 
+Each of the four ways to store data in the browser has its pros and cons. Through this lesson, we'll look at the best way to work with each of them.
+
+Let's begin with creating a new React project: `npx create-react-app client-side-storage`.
 
 
 # Cookies
@@ -25,6 +27,8 @@ const getCookie = () => {
     
 }
 
-module.exports = setCookie;
+module.exports = {setCookie, getCookie};
 
 ```
+
+When we create a cookie, it is composed of three parts: a key, a value and an expiration. Keys and values are likely familiar to you from working with Objects or JSON. One thing to note is that a cookie can only store a string as its value. Remember that for many datatypes, you can cast them to a string by called `toString` on them. 
