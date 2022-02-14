@@ -80,7 +80,7 @@ OR
 
 [Outline](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SuperTest.md)
 
-### Section 7: Session Storage, Local Storage, Cookies, and Cache
+### Section 7: Client Side Storage
 
 Learning Objectives: 
 
