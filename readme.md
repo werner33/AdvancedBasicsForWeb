@@ -96,18 +96,7 @@ Learning Objectives:
 4. [Local Storage]()
 5. [Cache]()
 
-### Section 8: Git 1
-
-[Video recording](https://us06web.zoom.us/rec/share/KF6XLE355wgu1y87FPuf_0tXEG5OM-1SjXoPyHEIVR4bpqRg9mdJRg7r07GO1qZs.H7DUEOoxTNxh82Tm) Password: U8$Xq@7w
-
-1. [Review of Git](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/Git.md)
-
- 
-### Section 9: Git 2
-
-1. [Amending Commits](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/Git2.md)
-
-### Section 10: SQL 1
+### Section 8: SQL 1
 
 [Video Recording]()
 
@@ -116,9 +105,20 @@ Learning Objectives:
 3.
 4.
 
-### Section 11: SQL 2
+### Section 9: SQL 2
 
 1. [Joins](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SQL2.md)
+
+### Section 10: Git 1
+
+[Video recording](https://us06web.zoom.us/rec/share/KF6XLE355wgu1y87FPuf_0tXEG5OM-1SjXoPyHEIVR4bpqRg9mdJRg7r07GO1qZs.H7DUEOoxTNxh82Tm) Password: U8$Xq@7w
+
+1. [Review of Git](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/Git.md)
+
+ 
+### Section 11: Git 2
+
+1. [Amending Commits](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/Git2.md)
 
 ### Section 12: Contributing to Open Source
 
