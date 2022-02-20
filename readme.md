@@ -98,6 +98,11 @@ Learning Objectives:
 
 ### Section 8: SQL 1
 
+Learning Objectives:
+
+1. Review how SQL relates to web developement including SQL commands and http protocols
+2. Review or learn to use BETWEEN, LIKE, GROUP BY, BETWEEN, SORT BY
+
 [Video Recording]()
 
 1. [Understanding the Connection between SQL and Web Development](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SQL1.md)
