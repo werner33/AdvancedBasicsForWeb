@@ -101,7 +101,7 @@ Learning Objectives:
 Learning Objectives:
 
 1. Review how SQL relates to web developement including SQL commands and http protocols
-2. Review or learn to use BETWEEN, LIKE, GROUP BY, BETWEEN, SORT BY
+2. Review or learn to use BETWEEN, LIKE, GROUP BY, BETWEEN, SORT BY and LIMIT
 
 [Video Recording]()
 
