@@ -101,9 +101,7 @@ Learning Objectives:
 [Video Recording]()
 
 1. [Understanding the Connection between SQL and Web Development](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SQL1.md)
-2. Refining Selectors when Making a Query
-3.
-4.
+2. [Refining Selectors when Making a Query](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/RefiningSQLQueries.md)
 
 ### Section 9: SQL 2
 
