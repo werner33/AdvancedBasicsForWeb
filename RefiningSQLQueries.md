@@ -26,4 +26,3 @@ Select all the users that have `al` in their name.
 
 Select orders made between this date and that. 
 
-Some more code. 
