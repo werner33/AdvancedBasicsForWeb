@@ -21,9 +21,3 @@ When we want to see certain records collapsed into a single row, for example, wh
 Challenge: On the W3 orderDetail table, write a query that gets the number of products in each order. 
 
 ### Challenges
-
-Select all the users that have `al` in their name.
-
-Select orders made between this date and that. 
-
-Try again. 
