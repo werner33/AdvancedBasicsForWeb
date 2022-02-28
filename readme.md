@@ -103,7 +103,7 @@ Learning Objectives:
 1. Review how SQL relates to web developement including SQL commands and http protocols
 2. Review or learn to use BETWEEN, LIKE, GROUP BY, BETWEEN, SORT BY and LIMIT
 
-[Video Recording]()
+[Video Recording](https://us06web.zoom.us/rec/share/FLWyETb6OCNRM7k25wOTTj7WW1gZDP1jxEgr7AfodzXJssvIqa-zo88jizNFSYCb.tJ1PWknVaagh7tou?startTime=1645457925000)
 
 1. [Understanding the Connection between SQL and Web Development](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SQL1.md)
 2. [Refining Selectors when Making a Query](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/RefiningSQLQueries.md)
