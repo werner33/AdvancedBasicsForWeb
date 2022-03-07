@@ -113,7 +113,13 @@ Learning Objectives:
 
 ### Section 10: Git 1
 
-[Video recording](https://us06web.zoom.us/rec/share/KF6XLE355wgu1y87FPuf_0tXEG5OM-1SjXoPyHEIVR4bpqRg9mdJRg7r07GO1qZs.H7DUEOoxTNxh82Tm) Password: U8$Xq@7w
+Learning Objectives:
+
+1. Able to explain the difference between `git log` and `git reflog`
+2. Able to resolve conflicts when merging
+3. Able to use git stash including stashing, poping and writing messages
+
+[Video recording](https://us06web.zoom.us/rec/share/5aS3FoEdQRF0bFBRWv6qBTRYf8dfkNpPHMiGZORZCJFUPd3osR-Ia_x9rqWYfzRL.bVx93hCJrPYK2Myv?startTime=1646667113000)
 
 1. [Review of Git](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/Git.md)
 
