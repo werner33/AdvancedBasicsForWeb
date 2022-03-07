@@ -94,7 +94,6 @@ Learning Objectives:
 2. [Cookies]()
 3. [Session Storage]()
 4. [Local Storage]()
-5. [Cache]()
 
 ### Section 8: SQL 1
 
