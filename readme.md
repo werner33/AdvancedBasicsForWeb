@@ -109,9 +109,11 @@ Learning Objectives:
 
 ### Section 9: SQL 2
 
+[Video Recording](https://us06web.zoom.us/rec/share/BoB8IpCa5Uoa7jzI_Knd19fvypL81L4SkuV6O92oUGMNN_ylMaeJPK4DIFxcTGGB.l9cel_oP2W5xv_Pz)
+
 1. [Joins](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SQL2.md)
 
-### Section 10: Git 1
+### Section 10: Git 
 
 Learning Objectives:
 
@@ -119,16 +121,41 @@ Learning Objectives:
 2. Able to resolve conflicts when merging
 3. Able to use git stash including stashing, poping and writing messages
 
-[Video recording](https://us06web.zoom.us/rec/share/5aS3FoEdQRF0bFBRWv6qBTRYf8dfkNpPHMiGZORZCJFUPd3osR-Ia_x9rqWYfzRL.bVx93hCJrPYK2Myv?startTime=1646667113000)
+[Video recording](https://us06web.zoom.us/rec/share/egfytomWNFusx5OuK3XA_z3EzJG8umH8Rkaah-DlpC-O96_qFA6Z0qsIj9-IsLDH.U5U8fswTfEz57Ugm)
 
 1. [Review of Git](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/Git.md)
+2. [Amending Commits](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/Git2.md)
+
 
  
-### Section 11: Git 2
+### Section 11: Contributing to Open Source 1
 
-1. [Amending Commits](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/Git2.md)
+Learning Objectives
 
-### Section 12: Contributing to Open Source
+1. Able to explain what open source software is and give examples
+2. Able to explore open source software including reviewing issues that are open for resolution
+3. Able to fork and clone a repo to commence work on an issue
 
-1.TODO
+[Video Recording](https://us06web.zoom.us/rec/share/qlWbQFFTKtwkqgINa4GvKUYUFt7dxpiqaWBGhD6IMFeEUT9-ncKTjQE3EUN1orhM.1K2r56Ps6b9Ly-Rs)
+
+1. [What is Open Source?]()
+2. [Find a Project to Contribute To]()
+3. [Reviewing Open Issues]()
+4. [Forking, Cloning and Getting Started]()
+
+
+### Section 12: Contributing to Open Source 2
+
+Learning Objectives
+
+1. Selects 1-2 issues that they would like to resolve
+2. Begins the process of resolving the issue
+
+[Video Recording]()
+
+1. Resolving an Issue Locally
+2. Opening a Pull Request
+3. Resolving a Bounced Pull Request
+4. Adding an Open Source Contribution to Your Resume
+
 
