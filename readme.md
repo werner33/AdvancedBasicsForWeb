@@ -151,8 +151,6 @@ Learning Objectives
 1. Selects 1-2 issues that they would like to resolve
 2. Begins the process of resolving the issue
 
-[Video Recording]()
-
 1. Resolving an Issue Locally
 2. Opening a Pull Request
 3. Resolving a Bounced Pull Request
