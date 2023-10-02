@@ -32,7 +32,7 @@ To begin:
 
 2. Move into the directory you just created: `cd responsive-navbar`
 
-3. Install SCSS: `npm install node-sass`
+3. Install SCSS: `npm install sass`
 
 4. Run the project: `npm start`
 
