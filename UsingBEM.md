@@ -9,7 +9,7 @@ A block represents a piece of HTML that must stay together for it to be useful. 
 We give blocks a class name that represent what it is. We already followed this with our info card. 
 
 ``` HTML
-  <div class="infoCard"> <!-- This is our block-->
+  <div class="info-card"> <!-- This is our block-->
     <div class="title">Info Card</div>
     <div class="text"> 
       This is an info card with some content.
@@ -25,18 +25,18 @@ An element is one of the pieces that make up the block. For example, our info ca
 
 When using class names like 'title' or 'text', we run the risk of accidentally colliding with the same name in a different component. When following BEM, we will give each of them a class name made of three parts: 
 
-1) the block name - 'infoCard'
+1) the block name - 'info-card'
 2) two underscores '__'
 3) its own identifier = 'title'
 
-When we put it all together it looks like this: 'infoCard__title' and 'infoCard__test'. By following this pattern, we have largely reduced our chances of duplicating a style somewhere else in the application to 0. 
+When we put it all together it looks like this: 'info-card__title' and 'info-card__test'. By following this pattern, we have largely reduced our chances of duplicating a style somewhere else in the application to 0. 
 
 Here's what it looks like when we've changed the class names on each element:
 
 ``` HTML
-  <div class="infoCard"> <!-- This is our block-->
-    <div class="infoCard__title">Info Card</div>
-    <div class="infoCard__text"> 
+  <div class="info-card"> <!-- This is our block-->
+    <div class="info-card__title">Info Card</div>
+    <div class="info-card__text"> 
       This is an info card with some content.
     </div>
   </div>
@@ -44,10 +44,10 @@ Here's what it looks like when we've changed the class names on each element:
 
 # SCSS
 
-Now that we've changed our class names to match the BEM paradigm, let's get our SCSS working again. We didn't change the class name of our parent div and we didn't apply any styling to the text on our card, so we have no worries with either of those. Our title has changed however. We previously had a class name of 'title' and now we are using 'infoCard__title'. SCSS allows us to use the `&` character to represent all previous nested css selectors. This sounds more complicated than it is. First, here is what it looks like: 
+Now that we've changed our class names to match the BEM paradigm, let's get our SCSS working again. We didn't change the class name of our parent div and we didn't apply any styling to the text on our card, so we have no worries with either of those. Our title has changed however. We previously had a class name of 'title' and now we are using 'info-card__title'. SCSS allows us to use the `&` character to represent all previous nested css selectors. This sounds more complicated than it is. First, here is what it looks like: 
 
 ``` css
-.infoCard {
+.info-card {
   text-align: center;
   border: 1px solid black;
   width: 250px;
@@ -58,15 +58,14 @@ Now that we've changed our class names to match the BEM paradigm, let's get our 
    font-weight: 600;
    padding: 10px;
   }
-  
 }
 ```
 
-So what is happening here? By the time the SCSS engine has run, it sees that the title is nested under '.infoCard' and also that it has `&` meaning it should replace the `&` with the previous class. The result is css that looks like this: 
+So what is happening here? By the time the SCSS engine has run, it sees that the title is nested under '.info-card' and also that it has `&` meaning it should replace the `&` with the previous class. The result is css that looks like this: 
 
 ``` css
 
-.infoCard {
+.info-card {
   text-align: center;
   border: 1px solid black;
   width: 250px;
@@ -74,11 +73,10 @@ So what is happening here? By the time the SCSS engine has run, it sees that the
   padding: 20px; 
 }
 
-.infoCard .infoCard__title {
+.info-card .info-card__title {
  font-weight: 600;
  padding: 10px;
 }
-
 ```
 
 Don't worry if it doesn't make sense right away. It will become natural with repetition. 
