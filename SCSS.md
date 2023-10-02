@@ -13,7 +13,7 @@ You can review any of those things at their respective links.
 
 # SCSS
 
-SCSS (called Sass, as in, don't give me that sass!) is a CSS engine that allows us to nest our css, similar to how we nest HTML elements. Before we implement it in a React project, let's give it try by starting out on [jsFiddle.net](https://www.jsfiddle.net). 
+SCSS (called Sass, as in, don't give me that sass!) is a CSS engine that allows us to nest our css, similar to how we nest HTML elements. Before we implement it in a React project, let's give it try by starting out on [Codepen](https://codepen.io/). 
 
 First, in the CSS box, select SCSS from the drop down menu. You can see this is in the following image:
 
@@ -40,7 +40,7 @@ Next we move to the styling with CSS. Without SCSS, we would need to write our s
 
 ``` CSS 
 
-.infoCard {
+.info-card {
   text-align: center;
   border: 1px solid black;
   width: 250px;
@@ -48,7 +48,7 @@ Next we move to the styling with CSS. Without SCSS, we would need to write our s
   padding: 20px;
 }
 
-.infoCard .title {
+.info-card .title {
    font-weight: 600;
    padding: 10px;
 }
@@ -57,7 +57,7 @@ Next we move to the styling with CSS. Without SCSS, we would need to write our s
 However, as long as we have selected the SCSS from the dropdown (as shown above), we can start to use one of the features of SCSS - nested styling.
 
 ``` CSS
-.infoCard {
+.info-card {
   text-align: center;
   border: 1px solid black;
   width: 250px;
