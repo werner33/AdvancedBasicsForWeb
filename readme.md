@@ -4,13 +4,14 @@
 
 Learning Objectives: 
 
-1. Be able to Implement SCSS in a React Project 
-2. Understand SCSS nesting, partials and variables and be able to use them in a React project
+1. Understand the BEM naming convention
+2. Understand SCSS nesting, partials and variables
+3. Be able to Implement SCSS in a React Project 
 
 [Video recording](https://us06web.zoom.us/rec/share/rNUjdMBTVDzfy4nXCCPinBSRLUET4DI_6do1vSCszQ1a5GxLo1hTf73pocGNuRNB.qR5h4dfwGSXmvK1X)
 
-1. [What is SCSS](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSS.md)
-2. [What is BEM](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/UsingBEM.md)
+1. [What is BEM](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/UsingBEM.md)
+2. [What is SCSS](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSS.md) 
 3. [Using SCSS in Your React Project](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSSInYourProject.md)
 4. [Other SCSS Features](https://github.com/werner33/AdvancedBasicsForWeb/blob/main/SCSSFeatures.md)
 
