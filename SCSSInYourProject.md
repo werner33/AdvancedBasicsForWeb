@@ -14,7 +14,7 @@ Then you can start your server with `$ npm start`.
 
 # Installing SCSS
 
-We can install SCSS for React through NPM just like many other packages. Go to [Install SCSS](https://www.npmjs.com/package/node-sass) to learn more about this library. When you're ready, go ahead and run `npm install node-sass` in your project. 
+We can install SCSS for React through NPM just like many other packages. Go to [Install SCSS](https://www.npmjs.com/package/sass) to learn more about this library. When you're ready, go ahead and run `npm install sass` in your project. 
 
 Once the instlation is completed, go ahead and rename one of the files ending with `.css` file to `.scss`. Once you have made this change, make sure you also change the import statement for the css file.
 
@@ -36,9 +36,9 @@ Make a file called `InfoCard.js` with the following content:
  const InfoCard = () => {
   
   return (
-    <div className="infoCard"> 
-      <div className="infoCard__title">Info Card</div>
-      <div className="infoCard__text"> 
+    <div className="info-card"> 
+      <div className="info-card__title">Info Card</div>
+      <div className="info-card__text"> 
         This is an info card with some content.
       </div>
     </div>
@@ -53,7 +53,7 @@ Then create a `.scss` file that you import into the previous component:
 
 ``` css
 
-.infoCard {
+.info-card {
   text-align: center;
   border: 1px solid black;
   width: 250px;
@@ -64,7 +64,6 @@ Then create a `.scss` file that you import into the previous component:
    font-weight: 600;
    padding: 10px;
   }
-  
 }
 
 ```
