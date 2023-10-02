@@ -9,7 +9,7 @@ Let's imagine we want to set a background color for our `InfoCard`. Lets set a b
 Let's update our `InfoCard.scss` file: 
 
 ``` css 
-.infoCard {
+.info-card {
   text-align: center;
   border: 1px solid black;
   width: 250px;
@@ -36,7 +36,7 @@ In order to use this variable, lets set it at the top of our `InfoCard.scss` fil
 ``` css 
 $sky-blue: #99d6ff;
 
-.infoCard {
+.info-card {
   text-align: center;
   border: 1px solid black;
   width: 250px;
@@ -77,7 +77,7 @@ Next, we will remove the `$sky-blue` variable from `InfoCard.scss` and import ou
 ``` css 
 @import './colors.scss'
 
-.infoCard {
+.info-card {
   text-align: center;
   border: 1px solid black;
   width: 250px;
